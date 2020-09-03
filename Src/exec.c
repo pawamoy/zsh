@@ -5453,7 +5453,7 @@ execshfunc(Shfunc shf, LinkList args)
     cmdsp = 0;
     if ((osfc = sfcontext) == SFC_NONE)
 	sfcontext = SFC_DIRECT;
-    xtrerr = stderr;
+    xtrerr = xtrace_file;
 
     doshfunc(shf, args, 0);
 
